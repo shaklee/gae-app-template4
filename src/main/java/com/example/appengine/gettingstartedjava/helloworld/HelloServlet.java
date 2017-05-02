@@ -36,7 +36,7 @@ public class HelloServlet extends HttpServlet {
 // out.println("Gradle");
 // out.println("Local");
 out.println("Service 1");    
-out.println("Auto Scalee");
+out.println("Auto Scale");
   }
 }
 // [END example]
