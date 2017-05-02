@@ -32,7 +32,11 @@ public class HelloServlet extends HttpServlet {
   @Override
   public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
     PrintWriter out = resp.getWriter();
-    out.println("Hello, world - Flex Servlet gradle local service 1");
+    out.println("Flex Servlet");
+// out.println("Gradle");
+// out.println("Local");
+out.println("Service 1");    
+out.println("Auto Scalee");
   }
 }
 // [END example]
