@@ -18,6 +18,8 @@
 runtime: java
 env: flex
 
+service: srv1
+
 handlers:
 - url: /.*
   script: this field is required, but ignored
