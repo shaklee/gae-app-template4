@@ -1,7 +1,6 @@
 package hello;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -27,14 +26,13 @@ import org.springframework.context.annotation.ComponentScan;
  * 
  * @author Elli Albek
  */
-//TODO: Remove component scan
 
 @SpringBootApplication
-@ComponentScan ({"hello"})
+@ComponentScan(lazyInit = true)
 public class Application extends SpringBootServletInitializer {
-
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(Application.class);
-    }
+	// @Override
+	// protected SpringApplicationBuilder configure(SpringApplicationBuilder
+	// application) {
+	// //return application.sources(Application.class);
+	// }
 }
