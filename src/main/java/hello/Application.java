@@ -35,4 +35,16 @@ public class Application extends SpringBootServletInitializer {
 	// application) {
 	// //return application.sources(Application.class);
 	// }
+
+	// @Component
+	// @Primary
+	// public class CustomObjectMapper extends ObjectMapper {
+	// public CustomObjectMapper() {
+	// setSerializationInclusion(JsonInclude.Include.NON_NULL);
+	// configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+	// configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
+	// configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+	// enable(SerializationFeature.INDENT_OUTPUT);
+	// }
+	// }
 }
