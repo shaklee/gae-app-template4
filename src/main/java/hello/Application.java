@@ -28,7 +28,8 @@ import org.springframework.context.annotation.ComponentScan;
  */
 
 @SpringBootApplication
-@ComponentScan(lazyInit = true)
+
+@ComponentScan(lazyInit = true, basePackages = "hello")
 public class Application extends SpringBootServletInitializer {
 	// @Override
 	// protected SpringApplicationBuilder configure(SpringApplicationBuilder
