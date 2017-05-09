@@ -1,5 +1,8 @@
 // [START gradle]
 buildscript {      // Configuration for building
+  ext {
+	springFoxVersion = '2.6.+'
+  }
   repositories {
     jcenter()      // Bintray's repository - a fast Maven Central mirror & more
     mavenCentral()
@@ -38,8 +41,9 @@ dependencies {
   testCompile('org.springframework.boot:spring-boot-starter-test')
 
   // swager
-  compile "io.springfox:springfox-swagger2:2.6.+"
-  compile "io.springfox:springfox-bean-validators:2.6.+"
+  compile "io.springfox:springfox-swagger2:${springFoxVersion}"
+  compile "io.springfox:springfox-bean-validators:${springFoxVersion}"
+  compile "io.springfox:springfox-swagger-ui:${springFoxVersion}"
 }
 
 // [START gretty]

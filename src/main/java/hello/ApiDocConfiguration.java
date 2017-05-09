@@ -9,6 +9,7 @@ import com.google.common.base.Predicate;
 import springfox.bean.validators.configuration.BeanValidatorPluginsConfiguration;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger.web.UiConfiguration;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
@@ -25,7 +26,7 @@ public class ApiDocConfiguration {
 	public Docket customDocket() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				// PUBLIC API
-				.groupName("public").select().paths(publicPaths()).build()
+				.groupName("public-api").select().paths(publicPaths()).build()
 		// Internal API
 
 		;
@@ -33,5 +34,10 @@ public class ApiDocConfiguration {
 
 	private Predicate<String> publicPaths() {
 		return Paths.paths("/greeting");
+	}
+
+	@Bean
+	public UiConfiguration uiConfig() {
+		return new UiConfiguration(null,null, null, null, null, true, true, null); 
 	}
 }

@@ -22,8 +22,8 @@ public class Paths {
 		}
 	}
 
-	static Predicate<String> path(final String path) { 
-		//System.out.println(">>>>>>>>>>>>>>>>>>>>>>> " + path);
+	static Predicate<String> path(final String path) {
+		// System.out.println(">>>>>>>>>>>>>>>>>>>>>>> " + path);
 		if (path.endsWith("/*"))
 			return new Predicate<String>() {
 				final String prefix = path.substring(0, path.length() - 1);
