@@ -52,6 +52,16 @@ gretty {
     contextPath = '/'
     servletContainer = 'jetty9'  // What App Engine Flexible uses
 }
+
+import org.apache.tools.ant.filters.ReplaceTokens
+// replace springboot profile (dev, prod) in web.xml
+gretty {
+    webappCopy {
+        filesMatching 'WEB-INF/web.xml', {
+            filter(ReplaceTokens, tokens: [SPRING_PROFILE: 'dev'])
+        }
+    }
+}
 // [END gretty]
 
 // [START model]
@@ -62,7 +72,7 @@ appengine {
     promote = true              // default - & make this the current version
     project = 'modular-buffer-165700'
   }
-
+  
 }
 // [END model]
 
