@@ -18,7 +18,7 @@ This sample assumes you have [Java 8][java8] installed.
 
 ## Run locally
 ```
-gradle jettyRun
+./gradlew jettyRun
 ```
 Then go to http://localhost:8080/swagger-ui.html
 
