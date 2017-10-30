@@ -2,8 +2,10 @@
 GAE Tutorial 4 Public
 
 This sample shows how to run a [Spring Boot][spring-boot] application on [Google
-Cloud Platform][cloud-java]. It uses the [Google App Engine flexible
+Cloud Platform][cloud-java], combined with Swagger docs integrated via springfox. It uses the [Google App Engine flexible
 environment][App Engine-flexible].
+
+The base configuration is to have App Engine manage Jetty and the VM.
 
 [App Engine-flexible]: https://cloud.google.com/appengine/docs/flexible/
 [cloud-java]: https://cloud.google.com/java/
