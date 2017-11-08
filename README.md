@@ -27,7 +27,7 @@ Then go to http://localhost:8080/swagger-ui.html
 ### Deploy to app engine
 One of:
 ```
-gradle appengineDeploy
+./gradlew appengineDeploy
 mvn appengine:deploy
 ```
 
