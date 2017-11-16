@@ -63,7 +63,7 @@ gcloud auth application-default login
 
 ## Manual depoloy:
 ```
-gradle appengineStage
+./gradlew appengineStage
 cd build/staged-app 
 gcloud app deploy 
 ```
