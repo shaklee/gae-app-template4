@@ -70,7 +70,6 @@ appengine {
   deploy {   // deploy configuration
     stopPreviousVersion = true  // default - stop the current version
     promote = true              // default - & make this the current version
-    project = 'modular-buffer-165700'
   }
   
 }
