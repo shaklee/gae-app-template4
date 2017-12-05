@@ -33,5 +33,5 @@ runtime_config:  # Optional
   server: jetty9
 
 resources:
-  memory_gb: 2.0
+  memory_gb: 1.0
 # [END runtime]
