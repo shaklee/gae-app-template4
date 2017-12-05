@@ -24,13 +24,6 @@ This sample assumes you have [Java 8][java8] installed.
 ```
 Then go to http://localhost:8080/swagger-ui.html
 
-### Deploy to app engine
-One of:
-```
-./gradlew appengineDeploy
-mvn appengine:deploy
-```
-
 ## Creating the app in app engine
 See https://github.com/GoogleCloudPlatform/getting-started-java/tree/master/helloworld-springboot
 
